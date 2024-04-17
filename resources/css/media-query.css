@@ -317,8 +317,8 @@
 	} */
 
 	.main-nav {
-		position: fixed;
-		left: 15%;
+		position: absolute;
+		left: 75%;
 	}
 
 	.footer-social-icons {
@@ -354,5 +354,54 @@
 
 	.footer-para {
 		width: 50%;
+	}
+}
+
+/*Smaller phones*/
+@media only screen and (max-width: 410px) {
+	.main-nav {
+		width: 100%;
+		left: 75%;
+		margin-top: 2rem;
+		font-size: smaller;
+	}
+
+	.main-nav li {
+		display: block;
+		margin-right: 30px;
+	}
+
+	.logo-nav {
+		height: 8rem;
+		margin: 2rem 2rem 1rem;
+	}
+
+	.sticky-nav .main-nav {
+		left: 30%;
+	}
+
+	.sticky-nav .main-nav li {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	.about-h1 {
+		font-size: 300%;
+	}
+
+	.portfolio-filter-cat {
+		justify-content: center;
+		padding: 0.8rem;
+	}
+	.row-item-inner p {
+		top: 5%;
+	}
+
+	.gallery {
+		flex-wrap: wrap;
+	}
+
+	.footer {
+		justify-content: space-evenly;
 	}
 }

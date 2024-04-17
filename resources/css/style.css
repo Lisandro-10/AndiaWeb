@@ -378,7 +378,7 @@ h3 {
 }
 
 .logo-nav {
-	height: 120px;
+	height: 100%;
 	width: auto;
 	float: left;
 	margin: 10px 10px;
@@ -390,7 +390,6 @@ h3 {
 }
 
 /**** NAVIGATE SECTION ****/
-
 .main-nav {
 	list-style: none;
 	float: right;
@@ -433,7 +432,7 @@ h3 {
 	position: fixed;
 	left: 0;
 	top: 0;
-	background-color: var(--color-primary-light);
+	background-color: var(--color-primary-dark);
 	opacity: 0.9;
 	width: 100%;
 	z-index: 900;
