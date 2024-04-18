@@ -986,7 +986,7 @@ textarea {
 
 .js--about-box {
 	opacity: 0;
-	animation-duration: 0.7s;
+	transition: all 0.7s;
 }
 
 .js--about-box.animate__animated {

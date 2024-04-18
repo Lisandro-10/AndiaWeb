@@ -7,15 +7,6 @@ $(document).ready(function () {
 			$('nav').removeClass('sticky-nav')
 		}
 	})
-
-	$('.js--info-section').waypoint(function (direction) {
-		if (direction == 'down') {
-			$('nav').addClass('sticky-nav')
-		} else {
-			$('nav').removeClass('sticky-nav')
-		}
-	})
-
 	/*Scroll to contact*/
 	$('.js--scroll-to-contact').click(function () {
 		$('html, body').animate(
@@ -23,7 +14,6 @@ $(document).ready(function () {
 			1000
 		)
 	})
-
 	$('a[href*="#"]')
 		// Remove links that don't actually link to anything
 		.not('[href="#"]')
@@ -66,7 +56,6 @@ $(document).ready(function () {
 				}
 			}
 		})
-
 	/*Animation on Scroll*/
 	$('.js--about-section').waypoint(
 		function (direction) {
@@ -76,16 +65,6 @@ $(document).ready(function () {
 			offset: '85%',
 		}
 	)
-
-	$('.js--info-section').waypoint(
-		function (direction) {
-			$('.js--info-box').addClass('animate__animated animate__fadeInUp')
-		},
-		{
-			offset: '82%',
-		}
-	)
-
 	$('.js--services-section').waypoint(
 		function (direction) {
 			$('.js--services-box').addClass('animate__animated animate__zoomIn')
@@ -94,8 +73,4 @@ $(document).ready(function () {
 			offset: '50%',
 		}
 	)
-
-	$('.js--package-section').waypoint(function (direction) {
-		$('.js--ultimate').addClass('animate__animated animate__bounce')
-	})
 })
