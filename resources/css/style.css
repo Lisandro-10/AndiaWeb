@@ -476,7 +476,22 @@ h3 {
 	border-bottom: 1rem solid var(--color-primary-dark);
 	margin-bottom: 2.3rem;
 	width: 23%;
+	opacity: 0;
+	transition: all 0.3s;
 }
+.about-box:hover .style-line {
+	opacity: 1;
+}
+/* .about-box:hover .about-image-overlay {
+	opacity: 1;
+}
+
+.about-image-overlay {
+	opacity: 0;
+	background-color: var(--color-orange);
+	width: 100%;
+	height: ;
+} */
 
 /* .about-image-container {
 	/* width: 100%;
@@ -602,10 +617,9 @@ h3 {
 .featured__image img {
 	width: 100%;
 	height: auto;
-	transform: scale(1.08);
-	transition: all 0.3s;
+	transform: scale(1.02);
+	transition: all 0.4s;
 	filter: grayscale(30%);
-	/* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .featured__image:hover img {
@@ -624,17 +638,12 @@ h3 {
 	text-align: start;
 	width: 55%;
 	transition: all 0.3s;
-	/* top: 0%;
-	left: 0%; */
-	/* opacity: 1; */
 }
 
 .featured__image:hover .featured__para {
 	z-index: 1;
 	margin: 2.5rem;
 	border-bottom: 2px solid var(--color-white);
-	/*top: 15%;
-	left: 30%; */
 }
 
 /**** CROQUI SECTION ****/
@@ -985,7 +994,7 @@ textarea {
 /****** JQuery ANIMATED ON SCROLL *****/
 
 .js--about-box {
-	opacity: 0;
+	opacity: 1;
 	transition: all 0.7s;
 }
 
@@ -996,7 +1005,3 @@ textarea {
 .js--services-box {
 	animation-duration: 0.7s;
 }
-
-/* .js--info-box.animate__animated {
-	animation-duration: 0.7s;
-} */
