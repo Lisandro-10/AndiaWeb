@@ -120,6 +120,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+	.proxima {
+		font-size: 400%;
+	}
 	html,
 	body {
 		font-size: 10px;
