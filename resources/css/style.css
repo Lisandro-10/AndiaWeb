@@ -675,7 +675,7 @@ h3 {
 .croqui-row {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 49%;
 	margin-bottom: 1.5rem;
 }
