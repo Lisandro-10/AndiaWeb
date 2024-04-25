@@ -36,30 +36,17 @@ body {
 	margin: 0 auto;
 }
 
-/**** CLEARFIX ****/
-
-.clearfix {
-	zoom: 1;
-}
-
-.clearfix:after {
-	content: ' ';
-	display: table;
-	clear: both;
-	visibility: hidden;
-}
-
 /**** BUTTONS ****/
 
 .btn:link,
 .btn:visited {
-	border: 2px solid var(--color-primary);
+	border: 2px solid var(--color-primary-light);
 	color: var(--color-primary);
 }
 
 .btn:hover,
 .btn:active {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-light);
 	color: var(--color-white);
 }
 
@@ -68,11 +55,17 @@ body {
 	background-color: var(--color-white);
 	text-decoration: none;
 	padding: 10px 30px;
-	border-radius: 200px;
-	border: 2px solid var(--color-primary);
+	border-radius: 15rem;
+	border: 2px solid var(--color-primary-light);
 	color: var(--color-primary);
 	cursor: pointer;
 	font-weight: 400;
+}
+
+.btn-croqui {
+	text-align: center;
+	width: 14%;
+	left: 10%;
 }
 
 /**** HEADING SECTION ****/
@@ -451,6 +444,10 @@ h3 {
 .sticky-nav .main-nav li a:visited {
 	color: var(--color-black);
 	padding: 5px 0;
+}
+.sticky-nav .main-nav li a:hover,
+.sticky-nav .main-nav li a:active {
+	border-bottom: 3px solid var(--color-black);
 }
 
 /**** TEXTS ****/
