@@ -484,8 +484,6 @@ h3 {
 
 .style-line-croqui {
 	border-bottom: 1rem solid var(--color-primary-light);
-	position: relative;
-	left: 70%;
 }
 
 .about-section:hover .style-line-about {
