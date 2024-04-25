@@ -407,7 +407,7 @@ h3 {
 .main-nav li a:link,
 .main-nav li a:visited {
 	text-decoration: none;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 	padding-bottom: 0.4rem;
 	-webkit-transition: border-bottom 0.2s;
 	transition: border-bottom 0.2s;
@@ -415,7 +415,7 @@ h3 {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-	border-bottom: 2px solid var(--color-primary-dark);
+	border-bottom: 3px solid var(--color-primary-dark);
 }
 
 .main-nav-index li a:link,
@@ -662,7 +662,7 @@ h3 {
 
 .croqui-section {
 	background-color: var(--color-white);
-	padding-bottom: 5rem;
+	padding-top: 2rem;
 }
 
 .croqui {
@@ -795,11 +795,10 @@ textarea {
 .footer-para a {
 	color: var(--color-white);
 	text-decoration: none;
-	transition: font-size 0.2s;
 }
 
 .footer-para a:hover {
-	font-size: 110%;
+	border-bottom: 1.5px solid var(--color-orange);
 }
 
 /**** PARTICULAR PROJECT ****/
@@ -956,4 +955,15 @@ textarea {
 	height: 85vh;
 	object-fit: cover;
 	width: 100%;
+}
+
+/****** JQuery ANIMATED ON SCROLL *****/
+
+.js--about-box {
+	opacity: 1;
+	animation-duration: 0.7s;
+}
+
+.js--about-box.animate__animated {
+	opacity: 1;
 }
