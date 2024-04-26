@@ -368,6 +368,10 @@
 		font-size: 300%;
 	}
 
+	.btn-croqui {
+		width: 30%;
+	}
+
 	.gallery {
 		flex-wrap: wrap;
 	}
