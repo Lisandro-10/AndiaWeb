@@ -503,10 +503,6 @@ textarea {
 	background-color: var(--color-white);
 }
 
-input[type='checkbox'] {
-	margin: 10px 5px 10px 0;
-}
-
 textarea {
 	height: 100px;
 	font-family: 'Arial';
