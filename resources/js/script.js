@@ -1,31 +1,24 @@
 $(document).ready(function () {
-	/*Adding the header and footer*/
-	fetch('header.html')
-		.then((response) => response.text())
-		.then((data) => {
-			document.getElementById('header').innerHTML = data
-		})
-		.then(() => {
-			/*Adding the sticky navigation */
-			$('.js--about-section').waypoint(function (direction) {
-				if (direction == 'down') {
-					$('.nav').addClass('sticky-nav')
-				} else {
-					$('.nav').removeClass('sticky-nav')
-				}
-			})
-		})
-
-	fetch('footer.html')
-		.then((response) => response.text())
-		.then((data) => {
-			document.getElementById('footer').innerHTML = data
-		})
+	/*Adding the sticky navigation */
+	$('.js--about-section').waypoint(function (direction) {
+		if (direction == 'down') {
+			$('nav').addClass('sticky-nav')
+		} else {
+			$('nav').removeClass('sticky-nav')
+		}
+	})
 
 	/*Scroll to contact*/
 	$('.js--scroll-to-contact').click(function () {
 		$('html, body').animate(
 			{ scrollTop: $('.js-contact').offset().top },
+			1000
+		)
+	})
+
+	$('.js--scroll-to-about').click(function () {
+		$('html, body').animate(
+			{ scrollTop: $('.js--about-section').offset().top },
 			1000
 		)
 	})
@@ -72,12 +65,4 @@ $(document).ready(function () {
 				}
 			}
 		})
-	$('.js--about-section').waypoint(
-		function (direction) {
-			$('.js--about-box').addClass('animate__animated animate__fadeIn')
-		},
-		{
-			offset: '85%',
-		}
-	)
 })
