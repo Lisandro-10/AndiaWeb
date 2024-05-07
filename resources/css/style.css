@@ -714,14 +714,14 @@ textarea {
 	transition: opacity 0.3s;
 }
 
-.row-item:hover .row-item-inner p {
+.row-item-projects:hover .row-item-inner p {
 	opacity: 1;
 	left: 5%;
 }
-.row-item:hover .row-item-inner img {
+.row-item-projects:hover .row-item-inner img {
 	opacity: 0.6;
 }
-.row-item:hover .overlay {
+.row-item-projects:hover .overlay {
 	opacity: 1;
 }
 

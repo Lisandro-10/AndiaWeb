@@ -41,12 +41,20 @@ filterContainer.addEventListener('click', (event) => {
 		event.target.classList.add('active')
 		const filterValue = event.target.getAttribute('data-filter')
 		galleryItems.forEach((item) => {
-			if (item.classList.contains(filterValue) || filterValue === 'all') {
-				item.classList.remove('hide')
-				item.classList.add('show')
-			} else {
+			if (filterValue === 'all' && item.classList.contains('croquis')) {
 				item.classList.remove('show')
 				item.classList.add('hide')
+			} else {
+				if (
+					filterValue === 'all' ||
+					item.classList.contains(filterValue)
+				) {
+					item.classList.remove('hide')
+					item.classList.add('show')
+				} else {
+					item.classList.remove('show')
+					item.classList.add('hide')
+				}
 			}
 		})
 	}
