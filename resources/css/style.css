@@ -36,30 +36,17 @@ body {
 	margin: 0 auto;
 }
 
-/**** CLEARFIX ****/
-
-.clearfix {
-	zoom: 1;
-}
-
-.clearfix:after {
-	content: ' ';
-	display: table;
-	clear: both;
-	visibility: hidden;
-}
-
 /**** BUTTONS ****/
 
 .btn:link,
 .btn:visited {
-	border: 2px solid var(--color-primary);
+	border: 2px solid var(--color-primary-light);
 	color: var(--color-primary);
 }
 
 .btn:hover,
 .btn:active {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-light);
 	color: var(--color-white);
 }
 
@@ -68,11 +55,17 @@ body {
 	background-color: var(--color-white);
 	text-decoration: none;
 	padding: 10px 30px;
-	border-radius: 200px;
-	border: 2px solid var(--color-primary);
+	border-radius: 15rem;
+	border: 2px solid var(--color-primary-light);
 	color: var(--color-primary);
 	cursor: pointer;
 	font-weight: 400;
+}
+
+.btn-croqui {
+	text-align: center;
+	width: 18%;
+	left: 10%;
 }
 
 /**** HEADING SECTION ****/
@@ -153,215 +146,6 @@ h3 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
 		url(img/SM-1.webp);
 }
-
-.header-image-GA {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-GA.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-GA.webp);
-}
-.header-image-VL {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-VL.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-VL.webp);
-}
-.header-image-FM {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-FM.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-FM.webp);
-}
-
-.header-image-BAC {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-BAC.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-BAC.webp);
-}
-
-.header-image-SM {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-SM.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-SM.webp);
-}
-
-.header-image-FERM {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-FerM.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-FerM.webp);
-}
-
-.header-image-HA {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-HA.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-HA.webp);
-}
-
-.header-image-PER {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-PER.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-PER.webp);
-}
-
-.header-image-BP {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-BP.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-BP.webp);
-}
-
-.header-image-AL {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-AL.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-AL.webp);
-}
-
-.header-image-AM {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-AM.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-AM.webp);
-}
-
-.header-image-MANZUR {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-MANZUR.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-MANZUR.webp);
-}
-
-.header-image-DeptosUrquiza {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-DeptosUrquiza.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-DeptosUrquiza.webp);
-}
-
-.header-image-CAT {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-CAT.png);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-CAT.png);
-}
-
-.header-image-Bajada {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-Bajada.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-Bajada.webp);
-}
-
-.header-image-NA {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-NA.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-NA.webp);
-}
-
-.header-image-PM {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-PM.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-PM.webp);
-}
-
-.header-image-GP {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-POT.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-POT.webp);
-}
-
-.header-image-PiedraEscondida {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-piedraEscondida.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-piedraEscondida.webp);
-}
-
-.header-image-viaPergola {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-viaPergola.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-viaPergola.webp);
-}
-
-.header-image-CAMP {
-	background-image: -webkit-linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.4)
-		),
-		url(img/back-CAMP.webp);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-		url(img/back-CAMP.webp);
-}
-
 .header-box {
 	position: absolute;
 	top: 50%;
@@ -407,7 +191,7 @@ h3 {
 .main-nav li a:link,
 .main-nav li a:visited {
 	text-decoration: none;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 	padding-bottom: 0.4rem;
 	-webkit-transition: border-bottom 0.2s;
 	transition: border-bottom 0.2s;
@@ -415,7 +199,7 @@ h3 {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-	border-bottom: 2px solid var(--color-primary-dark);
+	border-bottom: 3px solid var(--color-primary-dark);
 }
 
 .main-nav-index li a:link,
@@ -452,6 +236,10 @@ h3 {
 	color: var(--color-black);
 	padding: 5px 0;
 }
+.sticky-nav .main-nav li a:hover,
+.sticky-nav .main-nav li a:active {
+	border-bottom: 3px solid var(--color-black);
+}
 
 /**** TEXTS ****/
 
@@ -487,8 +275,6 @@ h3 {
 
 .style-line-croqui {
 	border-bottom: 1rem solid var(--color-primary-light);
-	position: relative;
-	left: 70%;
 }
 
 .about-section:hover .style-line-about {
@@ -662,7 +448,7 @@ h3 {
 
 .croqui-section {
 	background-color: var(--color-white);
-	padding-bottom: 5rem;
+	padding-top: 2rem;
 }
 
 .croqui {
@@ -675,7 +461,7 @@ h3 {
 .croqui-row {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 49%;
 	margin-bottom: 1.5rem;
 }
@@ -715,10 +501,6 @@ textarea {
 	border-radius: 3px;
 	border: 2px solid var(--color-primary);
 	background-color: var(--color-white);
-}
-
-input[type='checkbox'] {
-	margin: 10px 5px 10px 0;
 }
 
 textarea {
@@ -795,11 +577,10 @@ textarea {
 .footer-para a {
 	color: var(--color-white);
 	text-decoration: none;
-	transition: font-size 0.2s;
 }
 
 .footer-para a:hover {
-	font-size: 110%;
+	border-bottom: 1.5px solid var(--color-orange);
 }
 
 /**** PARTICULAR PROJECT ****/
@@ -933,14 +714,14 @@ textarea {
 	transition: opacity 0.3s;
 }
 
-.row-item:hover .row-item-inner p {
+.row-item-projects:hover .row-item-inner p {
 	opacity: 1;
 	left: 5%;
 }
-.row-item:hover .row-item-inner img {
+.row-item-projects:hover .row-item-inner img {
 	opacity: 0.6;
 }
-.row-item:hover .overlay {
+.row-item-projects:hover .overlay {
 	opacity: 1;
 }
 
@@ -956,4 +737,15 @@ textarea {
 	height: 85vh;
 	object-fit: cover;
 	width: 100%;
+}
+
+/****** JQuery ANIMATED ON SCROLL *****/
+
+.js--about-box {
+	opacity: 1;
+	animation-duration: 0.7s;
+}
+
+.js--about-box.animate__animated {
+	opacity: 1;
 }
